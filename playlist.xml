@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<playlist>
+	<song>
+		<artist>
+			Queen
+		</artist>
+		<title> bohemian rhapsody</title>
+		<year> 1975</year>
+		<album> A night at the opera</album>
+		
+		
+	</song>
+	<song>
+		<artist>
+			u2
+		</artist>
+		<title> the fly </title>
+		<year> 1999</year>
+		<album> achtung baby</album>
+
+	</song>
+	<song>
+		<artist> post malone </artist>
+		<title> congratulations</title>
+		<year> 2017</year>
+		<album> pandora's sounds</album>
+
+	</song>
+</playlist>
