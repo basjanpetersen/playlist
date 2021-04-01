@@ -92,6 +92,7 @@
     <Content Include="playlist.xml" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_Code\SongMethodes.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
