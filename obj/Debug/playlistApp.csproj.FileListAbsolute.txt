@@ -70,3 +70,5 @@ C:\Users\basja\source\repos\playlistApp\playlistApp\obj\Debug\playlistApp.csproj
 C:\Users\basja\source\repos\playlistApp\playlistApp\obj\Debug\playlistApp.csproj.CopyComplete
 C:\Users\basja\source\repos\playlistApp\playlistApp\obj\Debug\playlistApp.dll
 C:\Users\basja\source\repos\playlistApp\playlistApp\obj\Debug\playlistApp.pdb
+C:\Users\lucas\Source\Repos\playlist\obj\Debug\playlistApp.dll
+C:\Users\lucas\Source\Repos\playlist\obj\Debug\playlistApp.pdb
