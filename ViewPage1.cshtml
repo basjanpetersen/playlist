@@ -41,17 +41,18 @@
     <h1> hallo welkom op onze playlist. </h1>
 
     <table border="1">
+        <!-- test -->
 
         @{
 
             foreach (DataRow liedje in ds.Tables["song"].Rows)
             {
-                <tr>
-                    <td>@liedje["artist"]</td>
-                    <td>@liedje["title"]</td>
-                    <td>@liedje["year"]</td>
-                    <td>@liedje["album"]</td>
-                </tr>
+            <tr>
+                <td>@liedje["artist"]</td>
+                <td>@liedje["title"]</td>
+                <td>@liedje["year"]</td>
+                <td>@liedje["album"]</td>
+            </tr>
             }
 
             //hier moet ik de ingelezen lijst van liedjes gaan weergeven//
