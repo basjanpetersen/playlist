@@ -1,4 +1,5 @@
-﻿using System;
+﻿
+using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Linq;
@@ -19,8 +20,9 @@ namespace playlistApp.App_Code
 
             DataColumn artist = new DataColumn("artist");
             DataColumn title = new DataColumn("title");
-            DataColumn album = new DataColumn("album");
             DataColumn year = new DataColumn("year");
+            DataColumn album = new DataColumn("album");
+
 
             //kolommen in detabel zetten. 
 

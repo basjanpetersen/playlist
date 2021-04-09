@@ -1,36 +1,17 @@
-﻿
+﻿<!DOCTYPE html>
+
 @using System.Data;
+@using playlistApp.App_Code;
 
-@{ 
+@{
 
-    //structuur die de database in memory kan bevatten.
+    SongMethods sm = new SongMethods();
 
-    DataSet ds = new DataSet("playlist");
-
-    DataTable song = new DataTable("song");
-
-    DataColumn artist = new DataColumn("artist");
-    DataColumn title = new DataColumn("title");
-    DataColumn album = new DataColumn("album");
-    DataColumn year = new DataColumn("year");
-
-    song.Columns.Add(artist);
-    song.Columns.Add(title);
-    song.Columns.Add(album);
-    song.Columns.Add(year);
-
-    ds.Tables.Add(song);
+    DataSet ds = sm.GetAllSongs();
 
 
-
-    //hier moeten we het bestand playlist.xml inlezen....
-    //????
-
-
-    ds.ReadXml(HttpContext.Current.Server.MapPath("~/playlist.xml"));
 
 }
-<!DOCTYPE html>
 <html>
 <head>
     <meta name="viewport" content="width=device-width" />
@@ -38,27 +19,27 @@
 </head>
 <body>
     <div>
-    <h1> hallo welkom op onze playlist. </h1>
+        <h1> hallo welkom op onze playlist. </h1>
 
-    <table border="1">
+        <table border="1">
 
-        @{
+            @{
 
-            foreach (DataRow liedje in ds.Tables["song"].Rows)
-            {
-            <tr>
-                <td>@liedje["artist"]</td>
-                <td>@liedje["title"]</td>
-                <td>@liedje["year"]</td>
-                <td>@liedje["album"]</td>
-            </tr>
+                foreach (DataRow liedje in ds.Tables["song"].Rows)
+                {
+                    <tr>
+                        <td>@liedje["artist"]</td>
+                        <td>@liedje["title"]</td>
+                        <td>@liedje["year"]</td>
+                        <td>@liedje["album"]</td>
+                    </tr>
+                }
+
+                //hier moet ik de ingelezen lijst van liedjes gaan weergeven//
             }
 
-            //hier moet ik de ingelezen lijst van liedjes gaan weergeven//
-        }
 
-
-    </table>
+        </table>
 
     </div>
 </body>
