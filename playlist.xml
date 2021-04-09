@@ -7,8 +7,8 @@
 		<title> bohemian rhapsody</title>
 		<year> 1975</year>
 		<album> A night at the opera</album>
-		
-		
+
+
 	</song>
 	<song>
 		<artist>
@@ -25,5 +25,11 @@
 		<year> 2017</year>
 		<album> pandora's sounds</album>
 
+	</song>
+	<song>
+		<artist> NF </artist>
+		<title> ...</title>
+		<year> 2021</year>
+		<album> ... </album>
 	</song>
 </playlist>
