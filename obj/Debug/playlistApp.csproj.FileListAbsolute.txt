@@ -87,3 +87,16 @@ C:\Users\basja\source\repos\playlist\obj\Debug\playlistApp.csproj.CoreCompileInp
 C:\Users\basja\source\repos\playlist\obj\Debug\playlistApp.csproj.CopyComplete
 C:\Users\basja\source\repos\playlist\obj\Debug\playlistApp.dll
 C:\Users\basja\source\repos\playlist\obj\Debug\playlistApp.pdb
+C:\Users\lucas\source\repos\playlist\bin\playlistApp.dll.config
+C:\Users\lucas\source\repos\playlist\bin\playlistApp.dll
+C:\Users\lucas\source\repos\playlist\bin\playlistApp.pdb
+C:\Users\lucas\source\repos\playlist\bin\System.Web.Helpers.xml
+C:\Users\lucas\source\repos\playlist\bin\System.Web.Mvc.xml
+C:\Users\lucas\source\repos\playlist\bin\System.Web.Razor.xml
+C:\Users\lucas\source\repos\playlist\bin\System.Web.WebPages.xml
+C:\Users\lucas\source\repos\playlist\bin\System.Web.WebPages.Deployment.xml
+C:\Users\lucas\source\repos\playlist\bin\System.Web.WebPages.Razor.xml
+C:\Users\lucas\source\repos\playlist\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\lucas\source\repos\playlist\obj\Debug\playlistApp.csprojAssemblyReference.cache
+C:\Users\lucas\source\repos\playlist\obj\Debug\playlistApp.csproj.CoreCompileInputs.cache
+C:\Users\lucas\source\repos\playlist\obj\Debug\playlistApp.csproj.CopyComplete
