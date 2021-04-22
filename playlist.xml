@@ -32,4 +32,10 @@
 		<year> 2021</year>
 		<album> ... </album>
 	</song>
+	<song>
+		<artist> Maroon 5 </artist>
+		<title> Sugar</title>
+		<year> 2015</year>
+		<album> On fire </album>
+	</song>
 </playlist>
