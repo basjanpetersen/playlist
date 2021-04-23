@@ -9,12 +9,13 @@ namespace playlistApp.App_Code
 {
     public class SongMethods
     {
-        DataSet ds = new DataSet("playlist");
+        public DataSet ds;
 
                                                                                                      //functies en variabelen.
         public DataSet GetAllSongs(string filePath)
         {
-                                                                                                    //structuur die de database in memory kan bevatten.            
+            ds = new DataSet("playlist");
+            //structuur die de database in memory kan bevatten.            
             DataTable song = new DataTable("song");
             DataColumn artist = new DataColumn("artist");
             DataColumn title = new DataColumn("title");
