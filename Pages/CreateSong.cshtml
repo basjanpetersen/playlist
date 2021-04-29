@@ -47,10 +47,11 @@
     {
         DataRow dr = sm.GetEmptyDataRow();
 
-        dr[0] = Request.Form["Artiest"];
-        dr[1] = Request.Form["Titel"];
-        dr[2] = Request.Form["Jaar"];
-        dr[3] = Request.Form["Album"];
+        dr[0] = sm.GetNextId();
+        dr[1] = Request.Form["Artiest"];
+        dr[2] = Request.Form["Titel"];
+        dr[3] = Request.Form["Jaar"];
+        dr[4] = Request.Form["Album"];
 
         sm.CreateSong(dr, file);
         Response.Redirect(@"~/index.cshtml");

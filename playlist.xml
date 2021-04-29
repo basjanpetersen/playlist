@@ -1,37 +1,45 @@
 <?xml version="1.0" standalone="yes"?>
 <playlist>
   <song>
-    <artist>
-			Queen
-		</artist>
-    <title> bohemian rhapsody</title>
-    <album> A night at the opera</album>
+    <id>1</id>
+    <artist> Queen </artist>
+    <title> bohemian rhapsody </title>
+    <album> A night at the opera </album>
     <year> 1975</year>
   </song>
   <song>
-    <artist>
-			u2
-		</artist>
+    <id>2</id>
+    <artist> u2 </artist>
     <title> the fly </title>
     <album> achtung baby</album>
-    <year> 1999</year>
+    <year> 1999 </year>
   </song>
   <song>
+    <id>3</id>
     <artist> post malone </artist>
-    <title> congratulations</title>
-    <album> pandora's sounds</album>
-    <year> 2017</year>
+    <title> congratulations </title>
+    <album> pandora's sounds </album>
+    <year> 2017 </year>
   </song>
   <song>
-    <artist>Maroon 5</artist>
-    <title>Sugar</title>
-    <album>2015</album>
-    <year>Flame on fire</year>
+    <id>4</id>
+    <artist> Maroon 5 </artist>
+    <title> Sugar </title>
+    <album> 2015 </album>
+    <year> Flame on fire </year>
   </song>
   <song>
+    <id>5</id>
     <artist>NF</artist>
     <title>When I Grow Up</title>
     <album>2021</album>
     <year>NF</year>
+  </song>
+  <song>
+    <id>6</id>
+    <artist>Maroon 5</artist>
+    <title>Sugar</title>
+    <album>2015</album>
+    <year>123</year>
   </song>
 </playlist>

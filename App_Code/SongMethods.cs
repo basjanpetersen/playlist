@@ -15,16 +15,18 @@ namespace playlistApp.App_Code
         public DataSet GetAllSongs(string filePath)
         {
             ds = new DataSet("playlist");
-            //structuur die de database in memory kan bevatten.            
+            //structuur die de database in memory kan bevatten.
             DataTable song = new DataTable("song");
+            DataColumn ID = new DataColumn("id");
             DataColumn artist = new DataColumn("artist");
             DataColumn title = new DataColumn("title");
             DataColumn year = new DataColumn("year");
             DataColumn album = new DataColumn("album");
 
 
-                                                                                                     //kolommen in detabel zetten. 
+            //kolommen in detabel zetten. 
 
+            song.Columns.Add(ID);
             song.Columns.Add(artist);
             song.Columns.Add(title);
             song.Columns.Add(album);
@@ -52,6 +54,20 @@ namespace playlistApp.App_Code
         {
             ds.Tables["song"].Rows.Add(dataRow);
             ds.WriteXml(HttpContext.Current.Server.MapPath(file));
+        }
+
+        public int GetNextId()
+        {
+            DataRow[] drArray = ds.Tables["song"].Select();
+            if (drArray != null && drArray.Length > 0)
+            {
+                int highestId = int.Parse(drArray[drArray.Length - 1]["id"].ToString());
+                return highestId + 1;
+            }
+            else
+            {
+                return 1;
+            }
         }
 
     }
