@@ -23,6 +23,7 @@
     <div>
         <h1> Hallo welkom op onze playlist. </h1>
 
+
         <table class="table table-dark">
 
             <tr>
@@ -43,7 +44,7 @@
                         <td>@liedje["title"]</td>
                         <td>@liedje["year"]</td>
                         <td>@liedje["album"]</td>
-                        <td><a href="~/Pages/DeleteSong.cshtml?id=@liedje["id"]">delete</a></td>
+                        <td><a id="delete" class="btn btn-danger" href="~/Pages/DeleteSong.cshtml?id=@liedje["id"]">delete</a></td>
                     </tr>
                 }
 
@@ -54,7 +55,8 @@
 
         <br /> <br />
 
-        <a href="Pages\CreateSong.cshtml">Add</a>
+        <a style="margin-left: 10px" class="btn btn-lg btn-primary" href="Pages\CreateSong.cshtml">Add</a>
+        <a class="btn btn-lg btn-primary" href=""> edit</a>
         <!-- test -->
     </div>
 </body>

@@ -6,10 +6,10 @@
 
     if (IsPost)
     {
-        if (Request.Form["flexRadioDefault"] == "ja")
+        if (Request.Form["keuze"] == "ja")
         {
             string id = Request.QueryString["id"];
-            //sm.DeleteSong(id, file);
+            sm.DeleteSong(id, file);
         }
 
         Response.Redirect(@"~/index.cshtml");
@@ -24,13 +24,13 @@
 <body>
     <form action="" method="post">
         <div class="form-check">
-            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" value="ja">
+            <input class="form-check-input" type="radio" name="keuze" id="flexRadioDefault1" value="ja">
             <label class="form-check-label" for="flexRadioDefault1">
                 ja
             </label>
         </div>
         <div class="form-check">
-            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" value="nee" checked>
+            <input class="form-check-input" type="radio" name="keuze" id="flexRadioDefault2" value="nee" checked>
             <label class="form-check-label" for="flexRadioDefault2">
                 nee
             </label>

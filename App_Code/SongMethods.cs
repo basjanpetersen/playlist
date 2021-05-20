@@ -69,6 +69,15 @@ namespace playlistApp.App_Code
                 return 1;
             }
         }
+        public void DeleteSong(string id, string file)
+        {
+            DataRow[] drArray = ds.Tables["song"].Select("id = '" + id + " ' ");
+            if (drArray != null && drArray.Length > 0)
+            {
+                drArray[0].Delete();
+                ds.WriteXml(HttpContext.Current.Server.MapPath(file));
+            }
+        }
 
     }
     // crud acties komen hieronder. 
