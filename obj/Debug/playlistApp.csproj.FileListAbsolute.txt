@@ -93,3 +93,11 @@ C:\Users\lucas\source\repos\playlist\obj\Debug\playlistApp.csproj.CoreCompileInp
 C:\Users\lucas\source\repos\playlist\obj\Debug\playlistApp.csproj.CopyComplete
 C:\Users\lucas\source\repos\playlist\obj\Debug\playlistApp.dll
 C:\Users\lucas\source\repos\playlist\obj\Debug\playlistApp.pdb
+C:\Users\basja\source\repos\playlist2\bin\playlistApp.dll.config
+C:\Users\basja\source\repos\playlist2\bin\playlistApp.dll
+C:\Users\basja\source\repos\playlist2\bin\playlistApp.pdb
+C:\Users\basja\source\repos\playlist2\obj\Debug\playlistApp.csprojAssemblyReference.cache
+C:\Users\basja\source\repos\playlist2\obj\Debug\playlistApp.csproj.CoreCompileInputs.cache
+C:\Users\basja\source\repos\playlist2\obj\Debug\playlistApp.csproj.CopyComplete
+C:\Users\basja\source\repos\playlist2\obj\Debug\playlistApp.dll
+C:\Users\basja\source\repos\playlist2\obj\Debug\playlistApp.pdb
