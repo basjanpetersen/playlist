@@ -79,6 +79,16 @@ namespace playlistApp.App_Code
             }
         }
 
+        public void EditSong(string id, string file)
+        {
+            DataRow[] drArray = ds.Tables["song"].Select("id = '" + id + " ' ");
+            if (drArray != null && drArray.Length > 0)
+            {
+                drArray[0].BeginEdit();
+                ds.WriteXml(HttpContext.Current.Server.MapPath(file));
+            }
+        }
+
     }
     // crud acties komen hieronder. 
 }
