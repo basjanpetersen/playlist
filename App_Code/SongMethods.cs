@@ -10,12 +10,11 @@ namespace playlistApp.App_Code
     public class SongMethods
     {
         public DataSet ds;
-
-                                                                                                     //functies en variabelen.
+                     
         public DataSet GetAllSongs(string filePath)
         {
             ds = new DataSet("playlist");
-            //structuur die de database in memory kan bevatten.
+
             DataTable song = new DataTable("song");
             DataColumn ID = new DataColumn("id");
             DataColumn artist = new DataColumn("artist");
@@ -23,22 +22,13 @@ namespace playlistApp.App_Code
             DataColumn year = new DataColumn("year");
             DataColumn album = new DataColumn("album");
 
-
-            //kolommen in detabel zetten. 
-
             song.Columns.Add(ID);
             song.Columns.Add(artist);
             song.Columns.Add(title);
             song.Columns.Add(album);
             song.Columns.Add(year);
-
-                                                                                                     //tabel in de db zetten 
+        
             ds.Tables.Add(song);
-
-
-
-                                                                                                      //hier moeten we het bestand playlist.xml inlezen....
-
 
             ds.ReadXml(HttpContext.Current.Server.MapPath(filePath));
             return ds;
@@ -69,6 +59,7 @@ namespace playlistApp.App_Code
                 return 1;
             }
         }
+
         public void DeleteSong(string id, string file)
         {
             DataRow[] drArray = ds.Tables["song"].Select("id = '" + id + " ' ");
@@ -77,17 +68,6 @@ namespace playlistApp.App_Code
                 drArray[0].Delete();
                 ds.WriteXml(HttpContext.Current.Server.MapPath(file));
             }
-        }
-
-        public void EditSong(string id, string file)
-        {
-            ds.WriteXml(HttpContext.Current.Server.MapPath(file));
-            //  DataRow[] drArray = ds.Tables["song"].Select("id = '" + id + " ' ");
-            // if (drArray != null && drArray.Length > 0)
-            // {
-            //    drArray[0].BeginEdit();
-            //    ds.WriteXml(HttpContext.Current.Server.MapPath(file));
-            //}
         }
 
         public DataRow GetSong(string id)
@@ -108,7 +88,6 @@ namespace playlistApp.App_Code
             ds.WriteXml(HttpContext.Current.Server.MapPath(@"~\playlist.xml"));
         }
 
-
     }
-    // crud acties komen hieronder. 
+
 }

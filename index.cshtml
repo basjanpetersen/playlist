@@ -4,13 +4,11 @@
 @using playlistApp.App_Code;
 
 @{
-
     SongMethods sm = new SongMethods();
     string filePath = @"~\playlist.xml";
     DataSet ds = sm.GetAllSongs(filePath);
     Session["playlistClass"] = sm;
     Session["file"] = filePath;
-
 }
 <html>
 <head>
@@ -23,7 +21,6 @@
     <div>
         <h1> Hallo welkom op onze playlist. </h1>
 
-
         <table class="table table-dark">
 
             <tr>
@@ -35,7 +32,6 @@
             </tr>
 
             @{
-
                 foreach (DataRow liedje in ds.Tables["song"].Rows)
                 {
                     <tr>
@@ -48,17 +44,12 @@
                         <a id="delete" class="btn btn-danger" href="~/Pages/DeleteSong.cshtml?id=@liedje["id"]">Delete</a></td>
                     </tr>
                 }
-
-                //hier moet ik de ingelezen lijst van liedjes gaan weergeven//
-
             }
         </table>
 
         <br />
 
         <a style="margin-left: 10px" class="btn btn-lg btn-primary" href="Pages/CreateSong.cshtml">Add</a>
-       <!-- <a class="btn btn-lg btn-primary" href="Pages/EditSong.cshtml?id=3"> edit</a> -->
-        <!-- test -->
     </div>
 </body>
 </html>
