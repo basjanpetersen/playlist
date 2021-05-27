@@ -27,8 +27,8 @@
                 <th>ID</th>
                 <th>Artist</th>
                 <th>Title</th>
+                <th>Album</th>
                 <th>Year</th>
-                <th>album</th>
             </tr>
 
             @{
@@ -38,8 +38,8 @@
                         <td>@liedje["id"]</td>
                         <td>@liedje["artist"]</td>
                         <td>@liedje["title"]</td>
-                        <td>@liedje["year"]</td>
                         <td>@liedje["album"]</td>
+                        <td>@liedje["year"]</td>
                         <td><a id="edit" class="btn btn-danger" href="~/Pages/EditSong.cshtml?id=@liedje["id"]">Edit</a>
                         <a id="delete" class="btn btn-danger" href="~/Pages/DeleteSong.cshtml?id=@liedje["id"]">Delete</a></td>
                     </tr>

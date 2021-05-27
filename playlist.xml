@@ -19,20 +19,20 @@
     <artist> post malone</artist>
     <title> congratulations </title>
     <album> pandora's sounds </album>
-    <year> 2017 </year>
+    <year> 2017</year>
   </song>
   <song>
     <id>4</id>
     <artist> Maroon 5 </artist>
     <title> Sugar </title>
-    <album> 2015</album>
-    <year> Flame on fire </year>
+    <album> Flame on fire </album>
+    <year> 2014</year>
   </song>
   <song>
     <id>5</id>
     <artist>NF</artist>
     <title>When I Grow Up</title>
-    <album>2021</album>
-    <year>NF</year>
+    <album>NF</album>
+    <year>2021</year>
   </song>
 </playlist>
