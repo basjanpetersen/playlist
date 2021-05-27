@@ -44,7 +44,8 @@
                         <td>@liedje["title"]</td>
                         <td>@liedje["year"]</td>
                         <td>@liedje["album"]</td>
-                        <td><a id="delete" class="btn btn-danger" href="~/Pages/DeleteSong.cshtml?id=@liedje["id"]">delete</a></td>
+                        <td><a id="edit" class="btn btn-danger" href="~/Pages/EditSong.cshtml?id=@liedje["id"]">Edit</a>
+                        <a id="delete" class="btn btn-danger" href="~/Pages/DeleteSong.cshtml?id=@liedje["id"]">Delete</a></td>
                     </tr>
                 }
 
@@ -53,10 +54,10 @@
             }
         </table>
 
-        <br /> <br />
+        <br />
 
-        <a style="margin-left: 10px" class="btn btn-lg btn-primary" href="Pages\CreateSong.cshtml">Add</a>
-        <a class="btn btn-lg btn-primary" href=""> edit</a>
+        <a style="margin-left: 10px" class="btn btn-lg btn-primary" href="Pages/CreateSong.cshtml">Add</a>
+       <!-- <a class="btn btn-lg btn-primary" href="Pages/EditSong.cshtml?id=3"> edit</a> -->
         <!-- test -->
     </div>
 </body>

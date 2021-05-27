@@ -7,16 +7,11 @@
     SongMethods sm = Session["playlistClass"] as SongMethods;
     string file = Session["file"] as string;
 
-    if (IsPost)
-    {
-        if (Request.Form["update"] == "ja")
-        {
-            string id = Request.QueryString["id"];
-            sm.DeleteSong(id, file);
-        }
+    string id = Request.QueryString["id"];
 
-        Response.Redirect(@"~/index.cshtml");
-    }
+    DataRow songI = sm.GetSong(id);
+    
+
 }
 
 <html>
@@ -34,19 +29,19 @@
             </tr>
             <tr>
                 <td>Artiest:</td>
-                <td><input type="text" name="Artiest" placeholder="Vul in..." /></td>
+                <td><input type="text" name="Artiest" value="@songI["artist"]" /></td>
             </tr>
             <tr>
                 <td>Titel:</td>
-                <td><input type="text" name="Titel" placeholder="Vul in..." /></td>
+                <td><input type="text" name="Titel" value="@songI["title"]" /></td>
             </tr>
             <tr>
                 <td>Jaar:</td>
-                <td><input type="text" name="Jaar" placeholder="Vul in..." /> </td>
+                <td><input type="text" name="Jaar" value="@songI["year"]" /> </td>
             </tr>
             <tr>
                 <td>Album:</td>
-                <td><input type="text" name="Album" placeholder="Vul in..." /></td>
+                <td><input type="text" name="Album" value="@songI["album"]" /></td>
             </tr>
             <tr>
                 <td colspan="2"><input type="submit" value="Submit" /></td>
@@ -56,15 +51,13 @@
 
     @if (IsPost)
     {
-        DataRow dr = sm.GetEmptyDataRow();
 
-        dr[0] = sm.GetNextId();
-        dr[1] = Request.Form["Artiest"];
-        dr[2] = Request.Form["Titel"];
-        dr[3] = Request.Form["Jaar"];
-        dr[4] = Request.Form["Album"];
+        songI[1] = Request.Form["Artiest"];
+        songI[2] = Request.Form["Titel"];
+        songI[3] = Request.Form["Jaar"];
+        songI[4] = Request.Form["Album"];
 
-        sm.CreateSong(dr, file);
+        sm.WriteSong();
         Response.Redirect(@"~/index.cshtml");
     }
 

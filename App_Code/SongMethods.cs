@@ -90,6 +90,25 @@ namespace playlistApp.App_Code
             //}
         }
 
+        public DataRow GetSong(string id)
+        {
+            DataRow[] drArray = ds.Tables["song"].Select("id = '" + id + " ' ");
+            if (drArray != null && drArray.Length > 0)
+            {
+                return drArray[0];
+            }
+            else
+            {
+                return null;
+            }
+        }
+
+        public void WriteSong()
+        {
+            ds.WriteXml(HttpContext.Current.Server.MapPath(@"~\playlist.xml"));
+        }
+
+
     }
     // crud acties komen hieronder. 
 }
