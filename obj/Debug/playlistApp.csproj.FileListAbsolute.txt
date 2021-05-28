@@ -101,3 +101,5 @@ C:\Users\basja\source\repos\playlist2\obj\Debug\playlistApp.csproj.CoreCompileIn
 C:\Users\basja\source\repos\playlist2\obj\Debug\playlistApp.csproj.CopyComplete
 C:\Users\basja\source\repos\playlist2\obj\Debug\playlistApp.dll
 C:\Users\basja\source\repos\playlist2\obj\Debug\playlistApp.pdb
+C:\Users\basja\source\repos\playlist2\bin\Newtonsoft.Json.dll
+C:\Users\basja\source\repos\playlist2\bin\Newtonsoft.Json.xml
