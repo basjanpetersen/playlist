@@ -1,0 +1,37 @@
+[
+  {
+    "id": "1",
+    "artist": "Queendsdsadsadsa",
+    "title": "bohemian rhapsody",
+    "album": "A night at the opera",
+    "year": "1975"
+  },
+  {
+    "id": "2",
+    "artist": "u2",
+    "title": "the fly",
+    "album": "achtung baby",
+    "year": "1999"
+  },
+  {
+    "id": "3",
+    "artist": "post malone",
+    "title": "congratulations",
+    "album": "pandora's sounds",
+    "year": "2017"
+  },
+  {
+    "id": "4",
+    "artist": "Maroon 5",
+    "title": "Sugar",
+    "album": "Flame on fire",
+    "year": "2014"
+  },
+  {
+    "id": "5",
+    "artist": "NF",
+    "title": "When I Grow Up",
+    "album": "NF",
+    "year": "2021"
+  }
+]
