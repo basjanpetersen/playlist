@@ -209,6 +209,7 @@
   <ItemGroup>
     <Content Include="App_Code\SongMethods.cs" />
     <Content Include="App_Code\Song.cs" />
+    <Content Include="App_Code\songmethodsJSON.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
