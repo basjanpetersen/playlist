@@ -6,7 +6,7 @@
 
     if (IsPost)
     {
-        if (Request.Form["keuze"] == "ja")
+        if (Request.Form["keuze"] == "Ja")
         {
             string id = Request.QueryString["id"];
             sm.DeleteSong(id, file);
@@ -22,28 +22,31 @@
     <title></title>
     <style>
     </style>
+    <link rel="stylesheet" href="~/Content/bootstrap.css" />
     <script src="~/Scripts/bootstrap.min.js"></script>
 </head>
 <body>
-    <form action="" method="post" >
-        <div class="form-check" class="form-group">
-            <input class="form-check-input" type="radio" name="keuze" id="flexRadioDefault1" value="ja">
-            <label class="form-check-label" for="flexRadioDefault1">
-                ja
-            </label>
-        </div>
-        <div class="form-check">
-            <input class="form-check-input" type="radio" name="keuze" id="flexRadioDefault2" value="nee" checked>
-            <label class="form-check-label" for="flexRadioDefault2">
-                nee
-            </label>
-        </div>
+    <div class="form" style="margin: 5px">
+        <form action="" method="post" style="padding:10px; border: 1px solid black; width: 120px; border-radius: 10px">
+            <div class="form-check" class="form-group">
+                <input class="form-check-input" type="radio" name="keuze" id="flexRadioDefault1" value="Ja">
+                <label class="form-check-label" for="flexRadioDefault1">
+                    Ja
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="keuze" id="flexRadioDefault2" value="nee" checked>
+                <label class="form-check-label" for="flexRadioDefault2">
+                    Nee
+                </label>
+            </div>
 
 
-        <label for="button"></label>
+            <label for="button"></label>
 
-        <input type="submit" class="btn" name="button" value="verstuur" />
-    </form>
+            <input type="submit" class="btn btn-dark" name="button" value="Verstuur" />
+        </form>
+    </div>
 
 
 </body>
