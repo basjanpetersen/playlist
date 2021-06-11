@@ -18,3 +18,7 @@ namespace playlistApp.App_Code
 
     }
 }
+
+/*    string jsonInput = File.ReadAllText(HttpContext.Current.Server.MapPath(@"~\playlist.json"));
+    List<Song> songs = (List<Song>)Newtonsoft.Json.JsonConvert.DeserializeObject(jsonInput, typeof(List<Song>));
+}*/
