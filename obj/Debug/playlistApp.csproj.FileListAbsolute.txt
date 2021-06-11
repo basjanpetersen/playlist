@@ -103,3 +103,13 @@ C:\Users\basja\source\repos\playlist2\obj\Debug\playlistApp.dll
 C:\Users\basja\source\repos\playlist2\obj\Debug\playlistApp.pdb
 C:\Users\basja\source\repos\playlist2\bin\Newtonsoft.Json.dll
 C:\Users\basja\source\repos\playlist2\bin\Newtonsoft.Json.xml
+C:\Users\lucas\Source\Repos\basjanpetersen\playlist\bin\playlistApp.dll.config
+C:\Users\lucas\Source\Repos\basjanpetersen\playlist\bin\playlistApp.dll
+C:\Users\lucas\Source\Repos\basjanpetersen\playlist\bin\playlistApp.pdb
+C:\Users\lucas\Source\Repos\basjanpetersen\playlist\bin\Newtonsoft.Json.dll
+C:\Users\lucas\Source\Repos\basjanpetersen\playlist\bin\Newtonsoft.Json.xml
+C:\Users\lucas\Source\Repos\basjanpetersen\playlist\obj\Debug\playlistApp.csproj.AssemblyReference.cache
+C:\Users\lucas\Source\Repos\basjanpetersen\playlist\obj\Debug\playlistApp.csproj.CoreCompileInputs.cache
+C:\Users\lucas\Source\Repos\basjanpetersen\playlist\obj\Debug\playlistApp.csproj.CopyComplete
+C:\Users\lucas\Source\Repos\basjanpetersen\playlist\obj\Debug\playlistApp.dll
+C:\Users\lucas\Source\Repos\basjanpetersen\playlist\obj\Debug\playlistApp.pdb
