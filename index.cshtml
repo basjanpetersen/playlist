@@ -12,7 +12,7 @@
 
     songmethodsJSON smjson = new songmethodsJSON();
     string filePathJSON = @"~\playlist.json";
-    List<Song> dsjson = smjson.GetAllSongs(filePathJSON);
+    List<Song> songs = smjson.GetAllSongs(filePathJSON);
     Session["playlistClassJSON"] = smjson;
     Session["file"] = filePathJSON;
 
@@ -78,7 +78,7 @@
             }
         </table>
 
-        @*        <h2>JSON</h2>
+                <h2>JSON</h2>
         <table class="table table-dark">
 
             <tr>
@@ -105,7 +105,7 @@
                     </tr>
                 }
             }
-        </table>*@
+        </table>
 
         <br />
         <a style="margin-left: 10px" class="btn btn-outline-success" href="Pages/CreateSong.cshtml">Add</a>

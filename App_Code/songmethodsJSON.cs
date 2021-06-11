@@ -16,19 +16,5 @@ namespace playlistApp.App_Code
             return songs;
         }
 
-
-
-        /*        SongmethodsJSON smjson= new SongmethodsJSON();
-                string filePath = @"~\playlist.json";
-                List<Song> ds = sm.GetAllSongs(filePath);
-                Session["playlistClass"] = smjson;
-                Session["file"] = filePath;
-        */
-
-
     }
 }
-
-/*    string jsonInput = File.ReadAllText(HttpContext.Current.Server.MapPath(@"~\playlist.json"));
-    List<Song> songs = (List<Song>)Newtonsoft.Json.JsonConvert.DeserializeObject(jsonInput, typeof(List<Song>));
-}*/
